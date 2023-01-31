@@ -5,7 +5,6 @@ const prod = new ProductData();
 
 const listp = new ProductList();
 
-console.log(listp)
 
 
 

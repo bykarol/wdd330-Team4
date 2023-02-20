@@ -18,43 +18,48 @@
   <main class="divider">
     <section class="products">
       <h2>Review & Place your Order</h2>
-      <form method="post" action="#" id="shippingForm">
+      <form id="shippingForm" name="shippingForm">
         <fieldset>
           <legend>Shipping</legend>
-          <label for="customerName">First Name</label>
-          <input type="text" id="customerName" name="customerName" required />
-          <label for="customerLastname">Last Name</label>
-          <input type="text" id="customerLastname" name="customerLastname" required />
-          <label for="customerStreet">Street</label>
-          <input type="text" id="customerStreet" name="customerStreet" required />
-          <label for="customerCity">City</label>
-          <input type="text" id="customerCity" name="customerCity" required />
-          <label for="customerState">State</label>
-          <input type="text" id="customerState" name="customerState" required />
-          <label for="customerZip">Zip</label>
-          <input type="number" id="customerZip" name="customerZip" required />
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" required />
+          <label for="street">Street</label>
+          <input type="text" id="street" name="street" required />
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" required />
+          <label for="state">State</label>
+          <input type="text" id="state" name="state" required />
+          <label for="zip">Zip</label>
+          <input type="number" id="zip" name="zip" required />
         </fieldset>
         <fieldset>
           <legend>Payment</legend>
-          <label for="ccNum">Card Number</label>
-          <input type="text" id="ccNum" name="ccNum" required />
-          <label for="expDate">Expiration Date</label>
-          <input type="date" id="expDate" name="expDate" required />
-          <label for="securityCode">Security Code</label>
-          <input type="number" id="securityCode" name="securityCode" required />
+          <label for="cardNumber">Card Number</label>
+          <input type="text" id="cardNumber" name="cardNumber" required />
+          <label for="expiration">Expiration Date</label>
+          <input type="text" id="expiration" name="expiration" required />
+          <label for="code">Security Code</label>
+          <input type="number" id="code" name="code" required />
         </fieldset>
         <fieldset>
           <legend>Order Summary</legend>
           <div>Item Subtotal(<span id="productsQuantity"></span>)
-            <span>Subtotal</span>
+            <span name="cart-total" id="cart-total"></span>
           </div>
-          <div>Shipping Estimate</div>
-          <div>Tax</div>
-          <div>Order Total</div>
+          <div>Shipping Estimate
+            <span id="shipping"></span>
+          </div>
+          <div>Tax
+            <span id="tax"></span>
+          </div>
+          <div>Order Total
+            <span id="orderTotal"></span>
+          </div>
         </fieldset>
+        <button type="submit" form="shippingForm">Checkout</button>
       </form>
-      <div></div>
-      <button type="submit" form="shippingForm">Checkout</button>
     </section>
   </main>
 

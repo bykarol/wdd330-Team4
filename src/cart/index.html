@@ -8,9 +8,10 @@
 
     <title>Sleep Outside | Cart</title>
 
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <script src="../js/cart.js" type="module"></script>
+    <script src="../js/cartTotal.js" type="module"></script>
   </head>
 
   <body>
@@ -52,9 +53,14 @@
             <p class="cart-card__price">$199.99</p>
           </li> -->
         </ul>
+        <div class="cart-footer">
+          <p>Total: $<span class="cart-total"></span></p>
+        </div>
+        <a href="../checkout/index.html" style="text-decoration: none"
+          ><button type="button">Checkout</button>
+        </a>
       </section>
     </main>
-
     <footer id="main-footer"></footer>
   </body>
 </html>

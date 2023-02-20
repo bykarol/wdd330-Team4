@@ -29,6 +29,12 @@ body {
   display: none;
 }
 
+.cart-footer {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+}
+
 img {
   max-width: 100%;
 }
@@ -89,7 +95,7 @@ header {
   margin-top: -1.3em;
 }
 
-.logo--square > div {
+.logo--square>div {
   margin-top: -1.7em;
 }
 
@@ -128,13 +134,6 @@ button {
 
 .cart:hover svg {
   fill: gray;
-}
-
-.cart-footer {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: red;
-  text-align: center;
 }
 
 /* End cart icon styles */

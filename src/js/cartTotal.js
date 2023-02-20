@@ -13,7 +13,7 @@ if (window.localStorage.length == 0) {
 }
 
 export default function displayTotal(items) {
-  let sum = 0.0;
+  let sum = 0.00;
   for (let i = 0; i < items.length; i++) {
     sum += items[i].FinalPrice;
   }

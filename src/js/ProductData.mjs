@@ -1,4 +1,4 @@
-// const baseURL = 'http://server-nodejs.cit.byui.edu:3000/';
+// const baseURL = 'http://server-nodejs.cit.byui.edu:3000/checkout';
 const baseURL = 'https://wdd330-backend.onrender.com/';
 
 function convertToJson(res) {

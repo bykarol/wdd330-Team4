@@ -43,7 +43,7 @@
           <label for="code">Security Code</label>
           <input type="number" id="code" name="code" required />
         </fieldset>
-        <fieldset>
+        <fieldset class="order-summary">
           <legend>Order Summary</legend>
           <div>Item Subtotal(<span id="productsQuantity"></span>)
             <span name="cart-total" id="cart-total"></span>
@@ -58,7 +58,7 @@
             <span id="orderTotal"></span>
           </div>
         </fieldset>
-        <button type="submit" form="shippingForm">Checkout</button>
+        <button type="submit" form="shippingForm" id="checkoutSubmit">Checkout</button>
       </form>
     </section>
   </main>

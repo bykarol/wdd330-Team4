@@ -1,5 +1,5 @@
+// const baseURL = 'http://server-nodejs.cit.byui.edu:3000/checkout';
 const baseURL = 'https://wdd330-backend.onrender.com/';
-// const baseURL = "http://server-nodejs.cit.byui.edu:3000/";
 
 function convertToJson(res) {
   if (res.ok) {
@@ -32,7 +32,7 @@ export default class ExternalServices {
       },
       body: JSON.stringify(payload),
     };
-    return await fetch(baseURL + "checkout/", options).then(convertToJson);
+    return await fetch(baseURL, options).then(convertToJson);
   }
 }
 

@@ -49,8 +49,8 @@ form#shippingForm fieldset {
 
 form#shippingForm fieldset input,
 form#shippingForm div {
-  margin-bottom: .5rem;
-  padding: .6rem;
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
 }
 
 /*To here*/
@@ -115,7 +115,7 @@ header {
   margin-top: -1.3em;
 }
 
-.logo--square>div {
+.logo--square > div {
   margin-top: -1.7em;
 }
 

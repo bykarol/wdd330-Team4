@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sleep Outside | Checkout</title>
 
-  <title>Sleep Outside | Checkout</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="../js/checkout.js" type="module"></script>
+  </head>
 
-  <link rel="stylesheet" href="/css/style.css" />
-  <script src="../js/checkout.js" type="module"></script>
-</head>
+  <body>
+    <header class="divider" id="main-header"></header>
+    <main class="divider">
+      <section class="products">
+        <h2>Review & Place your Order</h2>
+        <form id="shippingForm" name="shippingForm">
+          <fieldset>
+            <legend>Shipping</legend>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" required />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" required />
+            <label for="street">Street</label>
+            <input type="text" id="street" name="street" required />
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required />
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" required />
+            <label for="zip">Zip</label>
+            <input type="number" id="zip" name="zip" required />
+          </fieldset>
+          <fieldset>
+            <legend>Payment</legend>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" required />
+            <label for="expiration">Expiration Date</label>
+            <input type="text" id="expiration" name="expiration" required />
+            <label for="code">Security Code</label>
+            <input type="number" id="code" name="code" required />
+          </fieldset>
+          <fieldset class="order-summary">
+            <legend>Order Summary</legend>
+            <div>
+              Item Subtotal(<span id="productsQuantity"></span>)
+              <span name="cart-total" id="cart-total"></span>
+            </div>
+            <div>
+              Shipping Estimate
+              <span id="shipping"></span>
+            </div>
+            <div>
+              Tax
+              <span id="tax"></span>
+            </div>
+            <div>
+              Order Total
+              <span id="orderTotal"></span>
+            </div>
+          </fieldset>
+          <button type="submit" form="shippingForm" id="checkoutSubmit">
+            Checkout
+          </button>
+        </form>
+      </section>
+    </main>
 
-<body>
-  <header class="divider" id="main-header"></header>
-  <main class="divider">
-    <section class="products">
-      <h2>Review & Place your Order</h2>
-      <form id="shippingForm" name="shippingForm">
-        <fieldset>
-          <legend>Shipping</legend>
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" required />
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" required />
-          <label for="street">Street</label>
-          <input type="text" id="street" name="street" required />
-          <label for="city">City</label>
-          <input type="text" id="city" name="city" required />
-          <label for="state">State</label>
-          <input type="text" id="state" name="state" required />
-          <label for="zip">Zip</label>
-          <input type="number" id="zip" name="zip" required />
-        </fieldset>
-        <fieldset>
-          <legend>Payment</legend>
-          <label for="cardNumber">Card Number</label>
-          <input type="text" id="cardNumber" name="cardNumber" required />
-          <label for="expiration">Expiration Date</label>
-          <input type="text" id="expiration" name="expiration" required />
-          <label for="code">Security Code</label>
-          <input type="number" id="code" name="code" required />
-        </fieldset>
-        <fieldset class="order-summary">
-          <legend>Order Summary</legend>
-          <div>Item Subtotal(<span id="productsQuantity"></span>)
-            <span name="cart-total" id="cart-total"></span>
-          </div>
-          <div>Shipping Estimate
-            <span id="shipping"></span>
-          </div>
-          <div>Tax
-            <span id="tax"></span>
-          </div>
-          <div>Order Total
-            <span id="orderTotal"></span>
-          </div>
-        </fieldset>
-        <button type="submit" form="shippingForm" id="checkoutSubmit">Checkout</button>
-      </form>
-    </section>
-  </main>
-
-  <footer id="main-footer"></footer>
-</body>
-
+    <footer id="main-footer"></footer>
+  </body>
 </html>

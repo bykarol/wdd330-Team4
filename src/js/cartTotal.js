@@ -16,5 +16,5 @@ export default function displayTotal(items) {
   for (let i = 0; i < items.length; i++) {
     sum += items[i].FinalPrice;
   }
-  return sum;
+  return sum.toFixed(2);
 }

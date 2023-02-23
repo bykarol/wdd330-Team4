@@ -6,7 +6,6 @@ const totalPrice = document.querySelector(".cart-total");
 
 if (window.localStorage.length == 0) {
   totalDiv.classList.add("hide");
-
 } else {
   totalDiv.classList.remove("hide");
   totalPrice.innerHTML = `Total: $${displayTotal(cartItems)}`;

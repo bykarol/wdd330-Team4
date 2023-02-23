@@ -25,6 +25,8 @@ body {
   color: var(--dark-grey);
 }
 
+/*Last code addes from here*/
+
 .hide {
   display: none;
 }
@@ -34,6 +36,24 @@ body {
   font-weight: bold;
   text-align: center;
 }
+
+form#shippingForm {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form#shippingForm fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+form#shippingForm fieldset input,
+form#shippingForm div {
+  margin-bottom: 0.5rem;
+  padding: 0.6rem;
+}
+
+/*To here*/
 
 img {
   max-width: 100%;
@@ -95,7 +115,7 @@ header {
   margin-top: -1.3em;
 }
 
-.logo--square>div {
+.logo--square > div {
   margin-top: -1.7em;
 }
 

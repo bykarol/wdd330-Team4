@@ -2,6 +2,8 @@ import { loadHeaderFooter } from "./utils.mjs";
 import CheckoutProcess from "./CheckoutProcess.mjs";
 loadHeaderFooter();
 
+// testcard 1234123412341234  sec-code test 123
+
 const myCheckout = new CheckoutProcess("so-cart", ".order-summary");
 myCheckout.init();
 
@@ -15,7 +17,7 @@ document.querySelector('#checkoutSubmit')
     var myForm = document.forms[0];
     var chk_status = myForm.checkValidity();
     myForm.reportValidity();
-    if(chk_status) 
+    if (chk_status)
       myCheckout.checkout();
   });
 

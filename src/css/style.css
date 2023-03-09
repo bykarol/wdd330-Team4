@@ -166,6 +166,30 @@ button {
   margin: auto;
 }
 
+.product-grid {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-grid li {
+  text-align: center;
+}
+
+.product-grid li::marker {
+  content: none;
+}
+
+.product-grid li a {
+  color: var(--dark-grey);
+  text-decoration: none;
+}
+
+.product-grid img {
+  width: 100px;
+}
+
 .products {
   padding: 0.5em;
 }

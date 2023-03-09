@@ -1,4 +1,5 @@
 // const baseURL = 'http://server-nodejs.cit.byui.edu:3000/checkout';
+// const baseURL = "https://wdd330-backend.vercel.app/";
 const baseURL = 'https://wdd330-backend.onrender.com/';
 
 async function convertToJson(res) {
@@ -34,6 +35,35 @@ export default class ExternalServices {
       body: JSON.stringify(payload),
     };
     return await fetch(baseURL + "checkout/", options).then(convertToJson);
+  }
+  async loginRequest(user) {
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(user),
+    };
+    const response = await fetch(baseURL + "login", options).then(
+      convertToJson
+    );
+    return response.accessToken;
+  }
+  // make a request to the server for the current orders
+  // requires: a valid token
+  // returns: a list of orders
+  async getOrders(token) {
+    const options = {
+      method: "GET",
+      // the server will reject our request if we don't include the Authorization header with a valid token!
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    const response = await fetch(baseURL + "orders", options).then(
+      convertToJson
+    );
+    return response;
   }
 }
 
